@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Graphic Designer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        @layer base {
+            .font-bellefair {
+                font-family: 'Bellefair', serif;
+            }
+            .font-didact {
+                font-family: 'Didact Gothic', sans-serif;
+            }
+        }
+
+        body, html {
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+    </style>
+</head>
+
+
+<body class="bg-gradient-to-r from-purple-900 to-indigo-900 text-white font-sans" style="background-image: url(assets/Background.png);">
+
+    <header class="container p-6 text-center">
+        <nav class="flex justify-around items-center font-didact">
+            <a href="#" class="text-xl flex items-center border-b-4 px-6">
+                <img class="pr-4" src="assets/m 1.png" alt="">Home
+            </a>
+            <a href="#" class="ml-6 text-xl">Universe</a>
+            <a href="#" class="ml-6 text-xl">About</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-10">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <div class="text-7xl font-bellefair mt-10">The mind grapples with a new way of thinking.</div>
+                <p class="font-didact mt-4">A 24-years old young girl who proclaims herself to be ‘Creative Graphic Designer’ and who possesses abilities to match the title. Thus says the universe. Though she often lost amongst the ideas and lives a life of stressful, she is resolved to create new wonders and sharing ideas with other people to make something great.</p>
+                
+                <img src="assets/Konsep-09 1.png" alt="">
+                
+            </div>
+
+            <div class="lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0" style="position: relative;">
+                <img src="assets/Window.png" alt="Creative Graphic Designer" class="w-2/3 lg:w-2/3" style="position: relative; z-index: 1;">
+                <div style="position: absolute; bottom: -80px; right: -80px; z-index: 2;">
+                    <img src="assets/gweee.png" alt="" style="transform: scale(0.8);">
+                </div>
+            </div>
+
+            
+            
+        </div>
+
+        <p class="m-10 text-2xl">Please select which Path you wish to travel on.</p>
+
+        <div class="grid grid-cols-3 md:grid-cols-4 gap-6 mt-10">
+            <div class="flex flex-col items-center">
+                <img src="path-to-your-icon1.jpg" alt="Visual Identity" class="w-16 h-16">
+                <span class="mt-2">Visual Identity</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="path-to-your-icon2.jpg" alt="Illustration" class="w-16 h-16">
+                <span class="mt-2">Illustration</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="path-to-your-icon3.jpg" alt="Packaging" class="w-16 h-16">
+                <span class="mt-2">Packaging</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="path-to-your-icon4.jpg" alt="Photography" class="w-16 h-16">
+                <span class="mt-2">Photography</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="path-to-your-icon5.jpg" alt="UI/UX Design" class="w-16 h-16">
+                <span class="mt-2">UI/UX Design</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="path-to-your-icon6.jpg" alt="Publishing" class="w-16 h-16">
+                <span class="mt-2">Publishing</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="path-to-your-icon7.jpg" alt="Media Promotion" class="w-16 h-16">
+                <span class="mt-2">Media Promotion</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="path-to-your-icon8.jpg" alt="Videography" class="w-16 h-16">
+                <span class="mt-2">Videography</span>
+            </div>
+        </div>
+
+        <div class="text-center lg:text-left mt-10">
+            <a href="#" class="text-xl underline">Do you want to know more about - me?</a>
+            <p class="text-sm mt-2">I am just a person who designs for hobby only. I am stuck in depression sometimes.</p>
+            <button class="mt-4 px-6 py-2 bg-purple-700 hover:bg-purple-800 text-white font-bold rounded-full shadow-lg">Download Resume</button>
+        </div>
+
+    </main>
+
+    <footer class="text-center py-6 mt-10 border-t border-gray-700">
+        <p class="text-sm">&copy; Maruzen 2024 All Right Reserved.</p>
+    </footer>
+    
+</body>
+</html>
