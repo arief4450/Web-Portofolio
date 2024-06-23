@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Graphic Designer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        @layer base {
+            .font-bellefair {
+                font-family: 'Bellefair', serif;
+            }
+            .font-didact {
+                font-family: 'Didact Gothic', sans-serif;
+            }
+        }
+
+        body, html {
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+    </style>
+</head>
+
+
+<body class="bg-gradient-to-r from-purple-900 to-indigo-900 text-white font-sans" style="background-image: url(assets/Background.png);">
+
+    <header class="container p-6 text-center">
+        <nav class="flex justify-around items-center font-didact">
+            <a href="index.html" class="text-xl flex items-center border-b-4 px-6">
+                <img class="pr-4" src="assets/m 1.png" alt="">Home
+            </a>
+            <a href="universe.html" class="ml-6 text-xl">Universe</a>
+            <a href="about.html" class="ml-6 text-xl">About</a>
+        </nav>
+    </header>
+    
+
+    <footer class="text-center py-6 mt-10 border-t border-gray-700">
+        <p class="text-sm">&copy; Maruzen 2024 All Right Reserved.</p>
+    </footer>
+    
+</body>
+</html>

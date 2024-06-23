@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Graphic Designer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .window-container {
+            position: relative;
+            width: 300px; /* Adjust width as needed */
+            height: 300px; /* Adjust height as needed */
+            margin: auto;
+        }
+        .inner-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8); /* Adjust scale as needed */
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-purple-900 to-indigo-900 text-white font-sans" style="background-image: url(assets/Background.png);">
+
+    <header class="container p-6 text-center">
+        <nav class="flex justify-around items-center" style="font-family: 'Didact Gothic', sans-serif;">
+            <a href="index.html" class="text-xl flex items-center border-b-4 px-6">
+                <img class="pr-4" src="assets/m 1.png" alt="">Home
+            </a>
+            <a href="universe.html" class="ml-6 text-xl">Universe</a>
+            <a href="about.html" class="ml-6 text-xl">About</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-10">
+            <div class="window-container object-contain relative">
+                <img src="assets/Window.png" alt="Creative Graphic Designer" class="absolute top-0 left-0">
+                <img src="assets/1716645068285 1.png" alt="" class="absolute top-0 left-0">
+            </div>
+            
+            <div class="lg:w-2/3 text-center lg:text-left">
+                <div class="text-7xl font-serif mt-10" style="font-family: 'Bellefair', serif;">
+                    Nida Mufida.
+                </div>
+                <p class="text-4xl font-serif mt-2" style="font-family: 'Bellefair', serif;">
+                    Creative Graphic Designer
+                </p>
+
+                <p class="mt-4" style="font-family: 'Didact Gothic', sans-serif;">
+                    A 24-years old young girl who proclaims herself to be "Creative Graphic Designer" and who possesses abilities to match the title. Calm, but meticulous. Though she is often strapped for ideas and lives a life of stressful, she is resolved to explore more and sharing ideas with other people to make something great.
+                </p>
+
+                <div>
+                    <div class="flex flex-row">
+                        <img src="" alt="LinkedIn">
+                        Nida Mufiida
+                    </div>
+                    <div class="flex flex-row">
+                        <img src="" alt="LinkedIn">
+                        Nida Mufiida
+                    </div>
+                    <div class="flex flex-row">
+                        <img src="" alt="LinkedIn">
+                        Nida Mufiida
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2 class="text-2xl font-bold mt-10">Work Experience</h2>
+                <div class="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-10">
+                    <div class="lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-10">
+                        February 2023 – August 2024 | Fulltime Graphic Designer
+                    </div>
+
+                    <div class="lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-10">
+                        PT. Maxxima Innovative Engineering, Jakarta
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <h2 class="text-2xl font-bold mt-10">Software Skills</h2>
+            <div class="flex items-center mt-4">
+                <img src="assets/image (1).png" alt="Filmora">
+                <!-- Add your software skill icons here -->
+            </div>
+            <div class="flex items-center mt-2">
+                <!-- Add more software skill icons here -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-6 mt-10 border-t border-gray-700">
+        <p class="text-sm">&copy; Maruzen 2024 All Right Reserved.</p>
+    </footer>
+
+</body>
+</html>

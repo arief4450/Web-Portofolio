@@ -24,91 +24,197 @@
         body, html {
             overflow-x: hidden; /* Prevent horizontal scrolling */
         }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .slide-up, .slide-up-illustration, .slide-up-photo, .slide-up-publishing, .slide-up-media {
+            position: absolute;
+            opacity: 0; /* Ensure the image is hidden initially */
+        }
+
+        .slide-up {
+            bottom: 90px;
+            animation: slideUp 3s ease-in-out forwards;
+        }
+
+        .slide-up-illustration {
+            bottom: 190px;
+            animation: slideUp 3s ease-in-out forwards;
+        }
+
+        .slide-up-photo {
+            bottom: 50px;
+            animation: slideUp 3s ease-in-out forwards;
+        }
+
+        .slide-up-publishing {
+            bottom: 110px;
+            animation: slideUp 3s ease-in-out forwards;
+        }
+
+        .slide-up-media {
+            bottom: 20px;
+            animation: slideUp 3s ease-in-out forwards;
+        }
     </style>
 </head>
 
+<body class="bg-gradient-to-r from-purple-900 to-indigo-900 text-white font-sans">
+    <div style="background-image: url(assets/Background.png);">
 
-<body class="bg-gradient-to-r from-purple-900 to-indigo-900 text-white font-sans" style="background-image: url(assets/Background.png);">
+        <!-- Navbar -->
+        <div class="fixed top-0 left-0 w-full bg-opacity-90 backdrop-filter backdrop-blur-lg z-50">
+            <header class="container p-6 text-center">
+                <nav class="flex justify-around items-center font-didact">
+                    <a href="#" class="text-xl flex items-center border-b-4 px-6">
+                        <img class="pr-4" src="assets/m 1.png" alt="">Home
+                    </a>
+                    <a href="#" class="ml-6 text-xl">Universe</a>
+                    <a href="#" class="ml-6 text-xl">About</a>
+                </nav>
+            </header>
+        </div>
+        <!-- end of navbar -->
 
-    <header class="container p-6 text-center">
-        <nav class="flex justify-around items-center font-didact">
-            <a href="#" class="text-xl flex items-center border-b-4 px-6">
-                <img class="pr-4" src="assets/m 1.png" alt="">Home
-            </a>
-            <a href="#" class="ml-6 text-xl">Universe</a>
-            <a href="#" class="ml-6 text-xl">About</a>
-        </nav>
-    </header>
+        <main class="container mx-auto p-6">
+            <!-- Paragraph 1 -->
+            <div class="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-10 pt-28">
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <div class="text-7xl font-bellefair mt-10">The mind grapples with a new way of thinking.</div>
+                    <p class="font-didact mt-4">A 24-years old young girl who proclaims herself to be ‘Creative Graphic Designer’ and who possesses abilities to match the title. Thus says the universe. Though she often lost amongst the ideas and lives a life of stressful, she is resolved to create new wonders and sharing ideas with other people to make something great.</p>
+                    <img src="assets/Konsep-09 1.png" alt="">      
+                </div>
 
-    <main class="container mx-auto p-6">
-        <div class="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-10">
-            <div class="lg:w-1/2 text-center lg:text-left">
-                <div class="text-7xl font-bellefair mt-10">The mind grapples with a new way of thinking.</div>
-                <p class="font-didact mt-4">A 24-years old young girl who proclaims herself to be ‘Creative Graphic Designer’ and who possesses abilities to match the title. Thus says the universe. Though she often lost amongst the ideas and lives a life of stressful, she is resolved to create new wonders and sharing ideas with other people to make something great.</p>
-                
-                <img src="assets/Konsep-09 1.png" alt="">
-                
-            </div>
-
-            <div class="lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0" style="position: relative;">
-                <img src="assets/Window.png" alt="Creative Graphic Designer" class="w-2/3 lg:w-2/3" style="position: relative; z-index: 1;">
-                <div style="position: absolute; bottom: -80px; right: -80px; z-index: 2;">
-                    <img src="assets/gweee.png" alt="" style="transform: scale(0.8);">
+                <div class="lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0" style="position: relative;">
+                    <img src="assets/Window.png" alt="Creative Graphic Designer" class="w-2/3 lg:w-2/3" style="position: relative; z-index: 1;">
+                    <div style="position: absolute; bottom: -71px; right: -65px; z-index: 2;">
+                        <img src="assets/gweee.png" alt="" style="transform: scale(0.8);">
+                    </div>
                 </div>
             </div>
+            <!-- end of paragraph 1 -->
 
-            
-            
+            <p class="flex justify-center mt-40 text-2xl">Please select which Path you wish to travel on.</p>
+
+            <!-- Paths -->
+            <div class="flex flex-row items-center lg:justify-center gap-6 mt-16">
+
+                <div class="relative">
+                    <img src="Asset Portofolio/path/Asset 5@2x.png" alt="Main Image" class="h-24 lg:h-auto">
+                    <div class="absolute inset-0 flex justify-center items-center">
+                        <img src="Asset Portofolio/path/Asset 12@2x.png" alt="Slide Up Image" class="slide-up w-1/2">
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full flex justify-center">
+                        <img src="Asset Portofolio/path/Asset 2@2x.png" alt="Overlay Image" class="h-8 lg:h-auto">
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="Asset Portofolio/path/Asset 6@2x.png" alt="Main Image" class="h-24 lg:h-auto">
+                    <div class="absolute inset-0 flex justify-center items-center">
+                        <img src="Asset Portofolio/path/Asset 13@2x.png" alt="Slide Up Image" class="slide-up-illustration px-4">
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full flex justify-center">
+                        <img src="Asset Portofolio/path/Asset 3@2x.png" alt="Overlay Image" class="h-8 lg:h-auto">
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="Asset Portofolio/path/Asset 10@2x.png" alt="Main Image" class="h-24 lg:h-auto">
+                    <div class="absolute inset-0 flex justify-center items-center">
+                        <img src="Asset Portofolio/path/Asset 17@2x.png" alt="Slide Up Image" class="slide-up px-4">
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="Asset Portofolio/path/Asset 11@2x.png" alt="Main Image" class="h-24 lg:h-auto">
+                    <div class="absolute inset-0 flex justify-center items-center">
+                        <img src="Asset Portofolio/path/Asset 18@2x.png" alt="Slide Up Image" class="slide-up-photo px-4">
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="Asset Portofolio/path/Asset 7@2x.png" alt="Main Image" class="h-24 lg:h-auto">
+                    <div class="absolute inset-0 flex justify-center items-center">
+                        <img src="Asset Portofolio/path/Asset 14@2x.png" alt="Slide Up Image" class="slide-up-publishing px-4">
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full flex justify-end">
+                        <img src="Asset Portofolio/path/Asset 4@2x.png" alt="Overlay Image" class="w-8 lg:w-4/5">
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="Asset Portofolio/path/Asset 9@2x.png" alt="Main Image" class="h-24 lg:h-auto">
+                    <div class="absolute inset-0 flex justify-center items-center">
+                        <img src="Asset Portofolio/path/Asset 16@2x.png" alt="Slide Up Image" class="slide-up-media px-4">
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="Asset Portofolio/path/Asset 8@2x.png" alt="Main Image" class="h-24 lg:h-auto">
+                    <div class="absolute inset-0 flex justify-center items-center">
+                        <img src="Asset Portofolio/path/Asset 15@2x.png" alt="Slide Up Image" class="slide-up-media px-4">
+                    </div>
+                </div>
+            </div>
+            <!-- end of paths -->
+        </main>
+    </div>
+
+    <!-- footer -->
+    <div style="background-color: #0A0716;">
+        <div class="flex items-center justify-between px-8 py-4">
+            <img src="Asset Portofolio/icon/m.png" alt="" class="h-24">
+            <div class="ml-4 flex-grow">
+                <a href="#" class="text-xl underline">Do you want to know more about - me?</a>
+                <p class="text-sm mt-2">I feel my potential for bliss today, and I decide and commit.</p>
+            </div>
+            <button class="ml-4 px-6 py-2 bg-purple-700 hover:bg-purple-800 text-white font-bold rounded-xl shadow-lg">Download Resume</button>
         </div>
+        
+        <footer class="text-center py-2 border-t border-gray-700">
+            <p class="text-sm">&copy; Maruzen 2024 All Right Reserved.</p>
+        </footer>
+    </div>
 
-        <p class="m-10 text-2xl">Please select which Path you wish to travel on.</p>
+    <script>
+        document.addEventListener('wheel', function(event) {
+            if (event.deltaY > 0) {
+                window.scrollBy(0, window.innerHeight);
+            } else {
+                window.scrollBy(0, -window.innerHeight);
+            }
+        });
 
-        <div class="grid grid-cols-3 md:grid-cols-4 gap-6 mt-10">
-            <div class="flex flex-col items-center">
-                <img src="path-to-your-icon1.jpg" alt="Visual Identity" class="w-16 h-16">
-                <span class="mt-2">Visual Identity</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="path-to-your-icon2.jpg" alt="Illustration" class="w-16 h-16">
-                <span class="mt-2">Illustration</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="path-to-your-icon3.jpg" alt="Packaging" class="w-16 h-16">
-                <span class="mt-2">Packaging</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="path-to-your-icon4.jpg" alt="Photography" class="w-16 h-16">
-                <span class="mt-2">Photography</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="path-to-your-icon5.jpg" alt="UI/UX Design" class="w-16 h-16">
-                <span class="mt-2">UI/UX Design</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="path-to-your-icon6.jpg" alt="Publishing" class="w-16 h-16">
-                <span class="mt-2">Publishing</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="path-to-your-icon7.jpg" alt="Media Promotion" class="w-16 h-16">
-                <span class="mt-2">Media Promotion</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="path-to-your-icon8.jpg" alt="Videography" class="w-16 h-16">
-                <span class="mt-2">Videography</span>
-            </div>
-        </div>
+        document.addEventListener('DOMContentLoaded', function() {
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
 
-        <div class="text-center lg:text-left mt-10">
-            <a href="#" class="text-xl underline">Do you want to know more about - me?</a>
-            <p class="text-sm mt-2">I am just a person who designs for hobby only. I am stuck in depression sometimes.</p>
-            <button class="mt-4 px-6 py-2 bg-purple-700 hover:bg-purple-800 text-white font-bold rounded-full shadow-lg">Download Resume</button>
-        </div>
+            const callback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                    }
+                });
+            };
 
-    </main>
+            const observer = new IntersectionObserver(callback, options);
 
-    <footer class="text-center py-6 mt-10 border-t border-gray-700">
-        <p class="text-sm">&copy; Maruzen 2024 All Right Reserved.</p>
-    </footer>
-    
+            const targets = document.querySelectorAll('.slide-up, .slide-up-illustration, .slide-up-photo, .slide-up-publishing, .slide-up-media');
+            targets.forEach(target => observer.observe(target));
+        });
+    </script>
 </body>
 </html>
